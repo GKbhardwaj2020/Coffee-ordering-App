@@ -1,11 +1,22 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
+    ext.kotlin_version = '1.4.30-M1'
     repositories {
         google()
         jcenter()
+        maven {
+            //url '/home/harshit/AndroidStudioProjects/myplugin/libraryplugin/build/repo'
+            url '/home/gunjan/git_workspace/otasdk-android-plugin/OtasdkPlugin/build/repo'
+            //url '/home/gunjan/git_workspace/otasdk-android-plugin/libraryplugin/build/repo'
+        }
+        maven{url "https://plugins.gradle.org/m2/"}
+
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.1.2"
+        classpath "com.android.tools.build:gradle:3.5.0"
+        classpath "com.appscms:OtasdkPlugin:1.0.0"
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3"
+
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

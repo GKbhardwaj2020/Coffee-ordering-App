@@ -133,7 +133,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginBottom="8dp"
         android:paddingLeft="24sp"
-        android:text="Chocolate"
+        android:text="@string/Chocolate"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/quantity_text_view"
         app:layout_constraintStart_toStartOf="parent"
