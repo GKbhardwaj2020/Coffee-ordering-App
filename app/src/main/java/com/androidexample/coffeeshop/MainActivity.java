@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox chocolate = (CheckBox) findViewById(R.id.ChocoLate_checkBox);
         boolean hasChocolate = chocolate.isChecked();
         String Message=OrderSummary(5, chkbox, hasChocolate);
+        // added comment
         String Address="gkjha20016@gmail.com";
         Intent SendEmail = new Intent(Intent.ACTION_SENDTO);
         SendEmail.setData(Uri.parse("mailto:")); //only email apps should handle this
